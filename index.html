@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> ARCAIDE </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link href='CSS/style.css' rel='stylesheet'>
+    <link href='CSS/mobile.css' rel='stylesheet'>
+</head>
+
+<body>
+
+    <div id='navbar'>
+        <h1 id='mast'> ARC<span>AIDE</span> </h1>
+        <div id='nav'>
+            <h2 id='id'> ### </h1>
+        </div>
+    </div>
+
+    <div id='main'>
+        <div class='area'>
+
+            <div class='flex'>
+                <div class='container'>
+                    <div class='square'>
+                        <canvas id='input-1' class='canvas input active'></canvas>
+                        <canvas id='input-2' class='canvas input'></canvas>
+                        <canvas id='input-3' class='canvas input'></canvas>
+                        <canvas id='input-4' class='canvas input'></canvas>
+                        <canvas id='input-5' class='canvas input'></canvas>
+                        <canvas id='input-6' class='canvas input'></canvas>
+                        <canvas id='input-7' class='canvas input'></canvas>
+                        <canvas id='input-8' class='canvas input'></canvas>
+                    </div>
+                </div>
+
+                <div class='container'>
+                    <canvas id='canvas'></canvas>
+                </div>
+
+                <div class='shelf'>
+                    <div id='objects'>
+                        <div id='obj-box-1' class='obj-box active'>
+                            <div class='flex'>
+                                <canvas id='icanv-1' class='object'></canvas>
+                                <p class='arrow'> ➔ </p>
+                                <canvas id='ocanv-1' class='object'></canvas>
+                            </div>
+                            <input id='label-1' class='label' value='Item 1'></input>
+                        </div>
+                    </div>
+                    <div id='buttons'>
+                        <button id='plus'> Add </button>
+                        <button id='minus'> Delete </button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!--
+    <h1 id='label'> $$ </h1>
+
+    <div id='module'>
+        <input id='file' type='file'>
+        <button id='upload'> Upload </button>
+    </div>
+    -->
+
+    <div id='download'>
+        <button id='submit'> Save </button>
+        <a download="data.json" id="link">
+            <p id='linktext'> Download</p>
+        </a>
+    </div>
+
+    <div id='dark'></div>
+    <div id='menu'>
+        <input id='search' placeholder='Enter an ID...'>
+        <div id='items'></div>
+    </div>
+
+</body>
+
+<script src='JS/functions.js'></script>
+<script src='JS/arcaide.js'></script>
+<script src='JS/list.js'></script>
+<script src='JS/script.js'></script>
+
+</html>
